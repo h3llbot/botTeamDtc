@@ -38,7 +38,7 @@ searchBot.on('message', message => {
   // message publié par le bot
   var hp = "📣 ";
   var lSearch1 = " est actuellement en recherche de joueur(s) sur ";
-  var lSearch2 = "\n▶ 📣\n\n▶";
+  var lSearch2 = "📣\n\n▶";
   var lSearch3 = "\n▶ Place(s) disponible(s) : ";
   var lSearch4 = "\n▶ Grade(s) minimum recherché(s) : ";
   
