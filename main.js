@@ -58,16 +58,70 @@ searchBot.on('message', message => {
         lSize = 5 - message.member.voiceChannel.members.size;
         
     
-        for (var index = 0; index < rankedArray.length; index++) 
-        {
-          if(lRoomFirstLetter === rankedArray[index]) 
-          {
-            lType = "RANKED";
-            continue;
-          }
+  switch (lRoomFirstLetter) {
+            case 'A': lType = "RAINBOW SIX  - CASUAL"
+            break;
+            case 'B': lType = "RAINBOW SIX  - CASUAL"
+            break;
+            case 'C': lType = "RAINBOW SIX  - CASUAL"
+            break;
+            case 'D': lType = "RAINBOW SIX  - CASUAL"
+            break;
+            case 'E': lType = "RAINBOW SIX  - CASUAL"
+            break;
+            case 'F': lType = "RAINBOW SIX  - RANKED"
+            break;
+            case 'G': lType = "RAINBOW SIX  - RANKED"
+            break;
+            case 'H': lType = "RAINBOW SIX  - RANKED"
+            break;
+            case 'I': lType = "RAINBOW SIX  - RANKED"
+            break;
+            case 'J': lType = "RAINBOW SIX  - RANKED"
+            break;
+            case 'K': lType = "P.U.B.G.";
+            lSize--;
+            break;
+            case 'L': lType = "P.U.B.G.";
+            lSize--;
+            break;
+            case 'M': lType = "P.U.B.G.";
+            lSize--;
+            break;
+            case 'N': lType = "P.U.B.G.";
+            lSize--;
+            break;
+            case 'O': lType = "P.U.B.G.";
+            lSize--;
+            break;
+            case 'P': lType = "FORTNITE"
+            break;
+            case 'Q': lType = "FORTNITE"
+            break;
+            case 'R': lType = "FORTNITE"
+            break;
+            case 'S': lType = "ESCAPE FROM TRAKOV"
+            break;
+            case 'T': lType = "ESCAPE FROM TRAKOV"
+            break;
+            case 'U': lType = "ESCAPE FROM TRAKOV"
+            break;
+            case 'V': lType = "OVERWATCH"
+            break;
+            case 'W': lType = "OVERWATCH"
+            break;
+            case 'X': lType = "OVERWATCH"
+            break;
+            case 'Y': lType = "JEU RANDOM"
+            break;
+            case 'Z': lType = "JEU RANDOM"
+            break;
+          default: lType = "JEU RANDOM"
+
         }
-    
-        if(lType === undefined) lType ="CASUAL";
+
+        if(lType === undefined) lType ="JEU RANDOM";
+
     
         lGrade = lArray[1];
       
