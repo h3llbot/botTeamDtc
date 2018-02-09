@@ -38,9 +38,10 @@ searchBot.on('message', message => {
   // message publié par le bot
   var hp = "📣 ";
   var lSearch1 = " est actuellement en recherche de joueur(s) 📣\n\n▶ ";
+  var lSearch2 = "\n▶ JEU : ";
   var lSearch3 = "\n▶ Place(s) disponible(s) : ";
   var lSearch4 = "\n▶ Grade(s) minimum recherché(s) : ";
-  var lSearch2 = "\n▶ JEU : ";
+  
   
   lArray = lMessage.split("_");
   lCommand = lArray[0];
@@ -130,7 +131,7 @@ searchBot.on('message', message => {
           lGrade = "tous niveaux acceptés (vous pouvez préciser un niveau minimum souhaité || exemple: !player_@or)";
         }
     
-        message.guild.channels.find("name", "recherche-de-joueurs").send(hp+message.author+lSearch1+lRoom+lSearch2+lSize+lSearch3+lGrade+lSearch4+lType);
+        message.guild.channels.find("name", "recherche-de-joueurs").send(hp+message.author+lSearch1+lRoom+lSearch2+lType+lSearch3+lSize+lSearch4+lGrade);
         message.reply("Votre message a bien été posté sur le channel : [recherche-de-joueurs]");
     }
     else{
